@@ -1,0 +1,248 @@
+@import '../fonts/e-Ukraine_typeface/font.css';
+
+$blue: #3A76F0;
+$yellow: #EEDA2A;
+$big-padding: calc(min(6rem, 7vw));
+
+// $grid-breakpoints: (
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+* {
+  font-family: 'eUkraine';
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: 'eUkraineHead';
+  font-size: 6rem;
+}
+h2 {
+  font-family: 'eUkraineHead';
+  font-size: 5rem;
+}
+h3 {
+  font-family: 'eUkraineHead';
+  font-size: 4rem;
+}
+h4 {
+  font-family: 'eUkraineHead';
+  font-size: 3rem;
+}
+h5 {
+  font-family: 'eUkraineHead';
+  font-size: 2rem;
+}
+h6 {
+  font-family: 'eUkraine';
+  font-size: 1.5rem;
+}
+@media (max-width: $md) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+
+}
+
+
+.btn {
+  padding: 1.75rem 4.5rem;
+  border: 5px solid white;
+  background: transparent;
+  background: linear-gradient(to right, white 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position:right bottom;
+  color: white;
+  border-radius: 0px;
+  transition:all 1s ease;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  &:hover {
+    color: black;
+    background-position:left bottom;
+  }
+}
+.bg {
+  width: 100%;
+}
+
+.bg-image {
+  &-statistic {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../iamges/bg-statistic.png');
+  }
+  &-home {
+    background-position: center center;
+    background-size: cover;
+    background-image: url('../iamges/bg-1.png');
+  }
+}
+
+.home {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    .top {
+      text-align: center;
+      text-transform: uppercase;
+      padding:14px;
+      background-color: $blue;
+      &-wrapper {
+        align-self: stretch;
+      }
+    }
+    .btn {
+      margin-bottom: 2rem;
+    }
+  .menu {
+    text-align: center;
+    margin-top: 2.5rem;
+    &-item {
+      text-decoration: none;
+      color: white;
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+      &.active {
+        color: $yellow;
+      }
+    }
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+  &-about {
+    h1{
+      margin-bottom: 2rem;
+    }
+    text-align: center;
+    max-width: 750px;
+    text-shadow: 0px 2px 4px rgba(64, 43, 34, 0.53);
+    @media (max-width: $md) {
+      margin: 20vw auto;
+    }
+  }
+  &-statistic {
+    color: white;
+    padding: $big-padding;
+    text-align: center;
+    .content-page {
+      max-width: 750px;
+      margin: 0px auto;
+      display: block;
+    }
+    .big-text {
+      font-size: 200px;
+      margin-top: 225px;
+      @media (max-width: $md) {
+        font-size: 4rem;
+      }
+    }
+    .content-changed {
+      display:none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
+.section {
+  padding: $big-padding;
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid black;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    .text-end {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 1rem;
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    div {
+      text-align: center;
+      h6 {
+        margin: 2rem 0rem 1rem;
+      }
+    }
+  }
+  &.bg-color {
+    color: white;
+    text-align: center;
+    background-color: $blue;
+    .btn {
+      margin-top: 2rem;
+    }
+  }
+  @media (max-width: $md) {
+    &__title {
+      display: block;
+      .text-end {
+        margin-top: 2rem;
+      }
+    }
+    &__content {
+      flex-wrap: wrap;
+      div {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+.footer {
+  padding: 3rem 2rem 1rem;
+  text-align: center;
+  background-color: black;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      color: white;
+      margin-bottom: 2rem;
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+      &.active {
+        color: $yellow;
+      }
+    }
+  }
+  .copyright {
+    color: #797979;
+  }
+}

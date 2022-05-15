@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "eUkraine";
+  src: url("./e-Ukraine/e-Ukraine-Regular.otf") format("opentype");
+  /* font-weight: normal; */
+}
+
+/* @font-face {
+  font-family: "eUkraine";
+  font-weight: bold;
+  src: url("./e-Ukraine/e-Ukraine-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "eUkraine";
+  font-weight: lighter;
+  src: url("./e-Ukraine/e-Ukraine-Light.otf") format("opentype");
+} */
+
+@font-face {
+  font-family: "eUkraineHead";
+  src: url("./e-Ukraine-head/e-UkraineHead-Regular.otf") format("opentype");
+}

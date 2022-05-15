@@ -1,0 +1,187 @@
+@import url(../fonts/e-Ukraine_typeface/font.css);
+* {
+  font-family: 'eUkraine';
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-weight: 400; }
+
+h1 {
+  font-family: 'eUkraineHead';
+  font-size: 6rem; }
+
+h2 {
+  font-family: 'eUkraineHead';
+  font-size: 5rem; }
+
+h3 {
+  font-family: 'eUkraineHead';
+  font-size: 4rem; }
+
+h4 {
+  font-family: 'eUkraineHead';
+  font-size: 3rem; }
+
+h5 {
+  font-family: 'eUkraineHead';
+  font-size: 2rem; }
+
+h6 {
+  font-family: 'eUkraine';
+  font-size: 1.5rem; }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.5rem; }
+  h2 {
+    font-size: 3rem; }
+  h3 {
+    font-size: 2.5rem; }
+  h4 {
+    font-size: 2rem; }
+  h5 {
+    font-size: 1.5rem; }
+  h6 {
+    font-size: 1rem; } }
+
+.btn {
+  padding: 1.75rem 4.5rem;
+  border: 5px solid white;
+  background: transparent;
+  background: linear-gradient(to right, white 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: white;
+  border-radius: 0px;
+  transition: all 1s ease;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto; }
+  .btn:hover {
+    color: black;
+    background-position: left bottom; }
+
+.bg {
+  width: 100%; }
+
+.bg-image-statistic {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../iamges/bg-statistic.png"); }
+
+.bg-image-home {
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../iamges/bg-1.png"); }
+
+.home {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white; }
+  .home .top {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 14px;
+    background-color: #3A76F0; }
+    .home .top-wrapper {
+      align-self: stretch; }
+  .home .btn {
+    margin-bottom: 2rem; }
+  .home .menu {
+    text-align: center;
+    margin-top: 2.5rem; }
+    .home .menu-item {
+      text-decoration: none;
+      color: white; }
+      .home .menu-item:not(:last-child) {
+        margin-right: 1.5rem; }
+      .home .menu-item.active {
+        color: #EEDA2A; }
+    @media (max-width: 768px) {
+      .home .menu {
+        display: none; } }
+  .home-about {
+    text-align: center;
+    max-width: 750px;
+    text-shadow: 0px 2px 4px rgba(64, 43, 34, 0.53); }
+    .home-about h1 {
+      margin-bottom: 2rem; }
+    @media (max-width: 768px) {
+      .home-about {
+        margin: 20vw auto; } }
+  .home-statistic {
+    color: white;
+    padding: calc(min(6rem, 7vw));
+    text-align: center; }
+    .home-statistic .content-page {
+      max-width: 750px;
+      margin: 0px auto;
+      display: block; }
+    .home-statistic .big-text {
+      font-size: 200px;
+      margin-top: 225px; }
+      @media (max-width: 768px) {
+        .home-statistic .big-text {
+          font-size: 4rem; } }
+    .home-statistic .content-changed {
+      display: none; }
+      .home-statistic .content-changed.active {
+        display: block; }
+
+.section {
+  padding: calc(min(6rem, 7vw)); }
+  .section__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid black;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem; }
+    .section__title .text-end {
+      display: flex;
+      align-items: center; }
+      .section__title .text-end img {
+        margin-right: 1rem; }
+  .section__content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; }
+    .section__content div {
+      text-align: center; }
+      .section__content div h6 {
+        margin: 2rem 0rem 1rem; }
+  .section.bg-color {
+    color: white;
+    text-align: center;
+    background-color: #3A76F0; }
+    .section.bg-color .btn {
+      margin-top: 2rem; }
+  @media (max-width: 768px) {
+    .section__title {
+      display: block; }
+      .section__title .text-end {
+        margin-top: 2rem; }
+    .section__content {
+      flex-wrap: wrap; }
+      .section__content div {
+        margin-right: 0px; } }
+
+.footer {
+  padding: 3rem 2rem 1rem;
+  text-align: center;
+  background-color: black; }
+  .footer__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .footer__list a {
+      text-decoration: none;
+      color: white;
+      margin-bottom: 2rem; }
+      .footer__list a:not(:last-child) {
+        margin-right: 1.5rem; }
+      .footer__list a.active {
+        color: #EEDA2A; }
+  .footer .copyright {
+    color: #797979; }
