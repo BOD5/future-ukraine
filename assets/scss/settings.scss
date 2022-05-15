@@ -1,0 +1,67 @@
+$blue: #3A76F0;
+$yellow: #EEDA2A;
+$big-padding: calc(min(6rem, 7vw));
+
+// $grid-breakpoints: (
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+h1 {
+  font-family: 'eUkraineHead';
+  font-size: 6rem;
+}
+
+h2 {
+  font-family: 'eUkraineHead';
+  font-size: 5rem;
+}
+
+h3 {
+  font-family: 'eUkraineHead';
+  font-size: 4rem;
+}
+
+h4 {
+  font-family: 'eUkraineHead';
+  font-size: 3rem;
+}
+
+h5 {
+  font-family: 'eUkraineHead';
+  font-size: 2rem;
+}
+
+h6 {
+  font-family: 'eUkraine';
+  font-size: 1.5rem;
+}
+
+@media (max-width: $md) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+}

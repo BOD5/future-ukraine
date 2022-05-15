@@ -1,0 +1,29 @@
+.footer {
+  padding: 3rem 2rem 1rem;
+  text-align: center;
+  background-color: black;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a {
+      text-decoration: none;
+      color: white;
+      margin-bottom: 2rem;
+
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+
+      &.active {
+        color: $yellow;
+      }
+    }
+  }
+
+  .copyright {
+    color: #797979;
+  }
+}
