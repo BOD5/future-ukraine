@@ -88,6 +88,7 @@ class Flow {
     if (!nextStep) {
       this.start();
       base.parentElement.classList.remove('open');
+      document.body.style = "";
       return null;
     }
     nextStep.classList.add('active');

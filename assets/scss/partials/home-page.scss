@@ -69,7 +69,7 @@
     }
 
     .big-text {
-      font-size: 200px;
+      font-size: calc(3rem + 7vw);
       margin-top: 225px;
 
       @media (max-width: $md) {
@@ -79,8 +79,10 @@
 
     .content-changed {
       display: none;
+      transition: display 0s, opacity 0.5s linear;
 
       &.active {
+        animation: scale-display .7s;
         display: block;
       }
     }
