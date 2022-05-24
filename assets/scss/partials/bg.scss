@@ -1,0 +1,42 @@
+.bg {
+  width: 100%;
+}
+
+.bg-image {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &-statistic {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../images/bg-statistic.png');
+  }
+  &-home {
+    background-image: url('../images/bg-1.png');
+  }
+  &-accounting {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('../images/accounting-bg.png');
+    &_zsu {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/accounting-zsu-bg.png');
+    }
+    &_civil {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51)), url('../images/accounting-civil-bg.png');
+    }
+    &_children {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51)), url('../images/accounting-children-bg.png');
+    }
+  }
+  &-help {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('../images/help-bg.png');
+    &_zsu {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0.79)), url('../images/help-zsu-bg.png');
+    }
+    &_civil {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../images/help-civil-bg.png');
+    }
+    &_children {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../images/help-children-bg.png');
+    }
+  }
+  &-404 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('../images/404-bg.png');
+  }
+}

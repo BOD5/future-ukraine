@@ -6,7 +6,16 @@
   align-items: center;
   justify-content: space-between;
   color: white;
-
+  &_help {
+    justify-content: flex-start;
+  }
+  &_e404 {
+    padding: 15px;
+    justify-content: space-around;
+    .top-page-about {
+      max-width: unset;
+    }
+  }
   &-about {
     h1 {
       margin-bottom: 2rem;

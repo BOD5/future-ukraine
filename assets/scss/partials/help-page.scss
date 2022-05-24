@@ -1,0 +1,63 @@
+.help-nav {
+  display: flex;
+  border: 3px solid white;
+  margin-top: 63px;
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 21px 76px;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    &.active {
+      background-color: white;
+      color: black;
+    }
+  }
+  @media (max-width: $lg) {
+    display: none;
+    flex-direction: column;
+  }
+}
+.help-content {
+  padding: 5vw 10vw;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between; 
+  height: 100%;
+  width: 100%;
+  @media (min-width: $md) {
+    .btn {
+      margin: 0px;
+    }
+  }
+  @media (max-width: $md) {
+    padding: 4vw;
+    margin-top: 4rem;
+  }
+  .top-page-about {
+    max-width: unset;
+    width: 100%;
+  }
+  .btn {
+     font-size: 20px;
+  }
+}
+.progress-help {
+  margin-top: 4.5vw;
+  height: 96px;
+  border: 5px solid white;
+  background: linear-gradient(to left, transparent 50%, #FFE600 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+  position: relative;
+  width: calc(min(750px, 100%));
+  transition: 0.3s;
+  .progress__value {
+    font-size: 24px;
+    color: black;
+    position: absolute;
+    top: calc(50% - 1rem);
+    text-align: end;
+  }
+}

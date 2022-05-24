@@ -1,51 +1,3 @@
-.btn {
-  padding: 1.75rem 4.5rem;
-  border: 5px solid white;
-  background: linear-gradient(to right, white 50%, transparent 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  color: white;
-  border-radius: 0px;
-  transition: all 1s ease;
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;
-
-  &:hover {
-    color: black;
-    background-position: left bottom;
-  }
-
-  &-black {
-    background: black;
-    border: none;
-
-    &:hover {
-      color: white;
-    }
-  }
-
-  &-icon {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-  }
-}
-.btn-back {
-  padding: calc(min(34px, 4vw));
-  line-height: 0px;
-  border-radius: 50%;
-  position: absolute;
-  top: 110px;
-  left: 5vw;
-  background: rgba($color: #fff, $alpha: 0.7);
-  cursor: pointer;
-  transition: 0.3s;
-  &:hover {
-    background: rgba($color: #fff, $alpha: 1);
-  }
-}
-
 .flow {
   margin-top: 2rem;
   display: none;
@@ -79,7 +31,7 @@
     }
   }
 }
-.progress {
+.progress-modal {
   position: absolute;
   top: 0;
   left: 0;
@@ -161,30 +113,6 @@ input:checked + label .checkbox-wrapper {
   }
 }
 
-.bg {
-  width: 100%;
-}
-
-.bg-image {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  &-statistic {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../images/bg-statistic.png');
-  }
-  &-home {
-    background-image: url('../images/bg-1.png');
-  }
-  &-accounting {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/accounting-bg.png');
-    &_zsu {
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/accounting-zsu-bg.png');
-    }
-    &_civil {
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/accounting-civil-bg.png');
-    }
-  }
-}
 .content-below {
   display: flex;
   align-items: center;
@@ -195,4 +123,14 @@ input:checked + label .checkbox-wrapper {
       margin: 0 20px;
     }
   }
+}
+
+.e404 {
+  font-size: calc(min(40vw, 592px));
+  line-height: calc(min(40vw, 592px));
+  font-weight: 800;
+  background: linear-gradient(98.28deg, #83B5F9 -0.89%, #F5F5BC 93.69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(white, 0.4);
+  background-clip: text;
 }
