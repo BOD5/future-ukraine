@@ -1,10 +1,17 @@
 @import '../fonts/e-Ukraine_typeface/font.css';
-@import './animations.scss';
 @import './settings.scss';
+@import './animations.scss';
+@import './partials/top-page.scss';
 @import './partials/footer.scss';
 @import './partials/section.scss';
 @import './partials/partials.scss';
 @import './partials/home-page.scss';
+@import './partials/img-nav.scss';
+@import './partials/content.scss';
+@import './partials/diagram.scss';
+@import './partials/card.scss';
+@import './partials/statistic.scss';
+@import './partials/report.scss';
 
 * {
   font-family: 'eUkraine';

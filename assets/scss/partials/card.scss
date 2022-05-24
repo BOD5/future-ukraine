@@ -1,0 +1,93 @@
+.card {
+  width: 360px;
+  height: 510px;
+  position: relative;
+  perspective: 1000px;
+  &__wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    opacity: 0;
+    transition: 0.3s;
+    background: linear-gradient(34.17deg, rgba(131, 181, 249, 0.87) 15.18%, rgba(245, 245, 188, 0.87) 84.99%);
+  }
+
+  &__front, &__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    backface-visibility: hidden;
+    background-color: #fff;
+    border: 4px solid black;
+  }
+  &__front {
+    cursor: pointer;
+  
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      object-fit: cover;
+    }
+    span {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      padding: 14px;
+      color: white;
+      background-color: black;
+      font-size: 24px;
+      z-index: 4;
+      transition: 0.3s;
+    }
+    &:hover {
+      .card__wrapper {
+        opacity: 0.8;
+      }
+      span {
+        background-color: initial;
+      }
+    }
+  }
+  &__back {
+    text-align: center;
+    position: relative;
+    padding: 46px 50px 20px;
+    transform: rotateY(180deg);
+    p {
+      margin-top: 54px;
+    }
+    h6 {
+      margin: 0px;
+    }
+  }
+  &__btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+    padding: 19px;
+    border: none;
+    outline: none;
+    background-color: $blue;
+    color: white;
+    cursor: pointer;
+  
+  }
+  &.rotate {
+    .card__front {
+      transform: rotateY(180deg);
+    }
+    .card__back {
+      transform: rotateY(360deg);
+    }
+  }
+}

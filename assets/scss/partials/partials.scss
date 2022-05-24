@@ -31,6 +31,20 @@
     align-items: center;
   }
 }
+.btn-back {
+  padding: calc(min(34px, 4vw));
+  line-height: 0px;
+  border-radius: 50%;
+  position: absolute;
+  top: 110px;
+  left: 5vw;
+  background: rgba($color: #fff, $alpha: 0.7);
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background: rgba($color: #fff, $alpha: 1);
+  }
+}
 
 .flow {
   margin-top: 2rem;
@@ -152,13 +166,33 @@ input:checked + label .checkbox-wrapper {
 }
 
 .bg-image {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   &-statistic {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../images/bg-statistic.png');
   }
-
   &-home {
-    background-position: center center;
-    background-size: cover;
     background-image: url('../images/bg-1.png');
+  }
+  &-accounting {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/accounting-bg.png');
+    &_zsu {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/accounting-zsu-bg.png');
+    }
+    &_civil {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/accounting-civil-bg.png');
+    }
+  }
+}
+.content-below {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  span {
+    margin: 0 100px;
+    @media (max-width: $md) {
+      margin: 0 20px;
+    }
   }
 }

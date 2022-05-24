@@ -1,0 +1,55 @@
+.content {
+  width: 100%;
+  padding: calc(min(10vw, 56px));
+  display: flex;
+  justify-content: center;
+  gap: 12vw;
+  &_black {
+    background: #000;
+    color: white;
+  }
+  &_blue {
+    background: $blue;
+    color: white;
+  }
+  @media (max-width: $md) {
+    gap: 5vw;
+    padding: 10vw 3vw;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.content-statistic {
+  display: flex;
+}
+
+.content-couter {
+  max-width: 300px;
+  text-align: start;
+  &__header {
+    font-family: 'eUkraineHead';
+  }
+  &__value {
+    margin: 41px 0px;
+    font-weight: bold;
+    small {
+      font-size: 24px;
+    }
+    @media (max-width: $md) {
+      margin: 5vw 0;
+    }
+  }
+  &__amount {
+    font-weight: 400;
+    opacity: 0.8;
+  }
+  @media (max-width: $md) {
+    text-align: center;
+  }
+}
+
+.content-about {
+  max-width: 450px;
+}

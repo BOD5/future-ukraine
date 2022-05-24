@@ -7,15 +7,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+
+    @media (max-width: $md) {
+      flex-direction: column;
+    }
 
     a {
       text-decoration: none;
       color: white;
-      margin-bottom: 2rem;
-
-      &:not(:last-child) {
-        margin-right: 1.5rem;
-      }
 
       &.active {
         color: $yellow;

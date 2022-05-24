@@ -1,0 +1,52 @@
+.statistic {
+  margin-top: calc(min(118px, 7vw));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  &__item {
+    margin-top: 2rem;
+  }
+  &__header {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  &__progress {
+    max-width: 161px;
+    min-width: 161px;
+    max-height: 161px;
+    min-height: 161px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    position: relative;
+    background-image: linear-gradient(to top, $blue 0%, #e7f0fd 100%);
+    overflow: hidden;
+
+    &_yellow {
+      background-image: linear-gradient(to top, $yellow 0%, #e8ecb0 100%);
+    }
+  }
+  &__value {
+    z-index: 5;
+  }
+}
+
+
+.wave {
+  width: 360px;
+  height: 360px;
+  position: absolute;
+  bottom: 0%;
+  left: -50%;
+  border-radius: 45%;
+  background: rgba(255, 255, 255, .75);
+  animation: wave 15s infinite linear;
+}
+
+@keyframes wave {
+  from { transform: rotate(0deg);}
+  from { transform: rotate(360deg);}
+}

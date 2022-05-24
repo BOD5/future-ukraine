@@ -1,6 +1,13 @@
 .section {
   padding: $big-padding;
 
+  &_reports {
+    padding: 0px;
+    .section__title {
+      margin: $big-padding $big-padding 0px;
+    }
+  }
+
   &__title {
     display: flex;
     align-items: center;
@@ -22,6 +29,7 @@
   &__content {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
 
     div {

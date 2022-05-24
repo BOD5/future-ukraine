@@ -8,22 +8,26 @@
   <title>Future Ukraine</title>
 </head>
 <body>
-  <div class="home bg-image-home">
-      <div class="top-wrapper">
-        <div class="top">Звіти надходять до вашої електронної пошти</div>
-        <div class="menu">
+  <div class="top-page bg-image bg-image-home">
+    <!-- Header -->
+      <header class="top-wrapper">
+        <div class="top">Звіти надходять до вашої електронної пошти</div> <!-- Only for home page -->
+        <nav class="menu">
           <a class="menu-item active" href="/">Головна</a>
           <a class="menu-item" href="/help">Допомогти</a>
-          <a class="menu-item" href="/reports">Звіти</a>
+          <a class="menu-item" href="/accounting">Звіти</a>
           <a class="menu-item" href="/shop">Магазин</a>
-        </div>
-      </div>
-      <div class="home-about">
+        </nav>
+      </header>
+    <!-- Header -->
+      <div class="top-page-about">
         <h1>Хто ми такі?</h1>
         <h6>Ми — благодійна ініціатива Future Ukraine, яка допомагає об‘єднати зусилля як волонтерських організацій, так і всіх охочих зробити свій внесок у порятунок України</h6>
       </div>
       <button class="btn" data-open-modal="1">Доєднатись</button>
   </div>
+  <!-- section brand -->
+  <!-- section -->
   <div class="section">
     <div class="section__title">
       <h4>Суть бренду</h4>
@@ -33,40 +37,222 @@
       </span>
     </div>
     <div class="section__content">
-      <div>
-        <img src="./assets/images/shop-img.png" alt="shop">
-        <h6>Магазин</h6>
-        <p>Купуючи українське, ти надаєш нам цінний ресурс для того, щоб допомогти все більшій кількості постаждалих від війни людей</p>
+      <!-- Content Card -->
+      <div class="card">
+        <div class="card__front">
+          <div class="card__wrapper"></div>
+          <img src="./assets/images/card-volonters.png" alt="">
+          <span>Волонтери</span>
+        </div>
+        <div class="card__back">
+          <h6>Волонтери</h6>
+          <p>Tellus consectetur massa egestas cras elementum dui mattis commodo mauris. Nam cras odio velit parturient sem. Pellentesque integer feugiat elementum, volutpat ac. Placerat donec ullamcorper non pellentesque. Tincidunt arcu facilisis bibendum morbi nibh malesuada orci.</p>
+          <button class="card__btn">Зв'язатися з нами</button>
+        </div>
       </div>
-      <div>
-        <img src="./assets/images/donate-img.png" alt="shop">
-        <h6>Цілеспрямовані донати</h6>
-        <p>Якщо ти хочеш допомогти, але не знаєш як, то наш проєкт для тебе. Обирай на що саме хочеш задонатити та надсилай скільки вважаєш за потрібне в один клік</p>
+      <!-- End card -->
+      <!-- Content Card -->
+      <div class="card">
+        <div class="card__front">
+          <div class="card__wrapper"></div>
+          <img src="./assets/images/card-donaters.png" alt="">
+          <span>Донатери</span>
+        </div>
+        <div class="card__back">
+          <h6>Донатери</h6>
+          <p>Tellus consectetur massa egestas cras elementum dui mattis commodo mauris. Nam cras odio velit parturient sem. Pellentesque integer feugiat elementum, volutpat ac. Placerat donec ullamcorper non pellentesque. Tincidunt arcu facilisis bibendum morbi nibh malesuada orci.</p>
+          <button class="card__btn">Задонатити</button>
+        </div>
       </div>
-      <div>
-        <img src="./assets/images/heart-img.png" alt="shop">
-        <h6>Волонтери</h6>
-        <p>Пошук нових волонтерських спільнот закордоном розширює наші можливості. Вкрай важливо об‘днувати зусилля в усьому світі. Лишай свою пошту, якщо знаєш такі організації</p>
+      <!-- End card -->
+      <!-- Content Card -->
+      <div class="card">
+        <div class="card__front">
+          <div class="card__wrapper"></div>
+          <img src="./assets/images/card-brands.png" alt="">
+          <span>Бренди</span>
+        </div>
+        <div class="card__back">
+          <h6>Бренди</h6>
+          <p>Tellus consectetur massa egestas cras elementum dui mattis commodo mauris. Nam cras odio velit parturient sem. Pellentesque integer feugiat elementum, volutpat ac. Placerat donec ullamcorper non pellentesque. Tincidunt arcu facilisis bibendum morbi nibh malesuada orci.</p>
+          <button class="card__btn">Зв'язатися з нами</button>
+        </div>
       </div>
+      <!-- End card -->
+      <!-- Content Card -->
+      <div class="card">
+        <div class="card__front">
+          <div class="card__wrapper"></div>
+          <img src="./assets/images/card-brands.png" alt="">
+          <span>Кав'ярні</span>
+        </div>
+        <div class="card__back">
+          <h6>Кав'ярні</h6>
+          <p>Tellus consectetur massa egestas cras elementum dui mattis commodo mauris. Nam cras odio velit parturient sem. Pellentesque integer feugiat elementum, volutpat ac. Placerat donec ullamcorper non pellentesque. Tincidunt arcu facilisis bibendum morbi nibh malesuada orci.</p>
+          <button class="card__btn">Зв'язатися з нами</button>
+        </div>
+      </div>
+      <!-- End card -->
     </div>
   </div>
-  <div class="home-statistic bg-image-statistic">
-    <div data-swiper>
+  <!-- end section -->
+  <div class="home-statistic bg-image bg-image-statistic">
+    <div>
       <div class="content-page">
         <h4>Чому ви нам потрібні?</h4>
         <h6>Щодня українці потерпають від наслідків війни. Лише офіційна статистика вказує на те, що допомога все ще потрібна</h6>
       </div>
-      <div class="content-changed active">
-        <div class="big-text">750+</div>
-        <p>дітей залишились без батьків</p>
-      </div>
-      <div class="content-changed">
-        <div class="big-text">100 000+</div>
-        <p>людей похилого віку та людей з інвалідністю не можуть дати собі ради в умовах сьогодення</p>
-      </div>
-      <div class="content-changed">
-        <div class="big-text">1 000 000+</div>
-        <p>українців втратили свої домівки й вимушено переселились</p>
+      <div class="statistic">
+        <div class="statistic__item">
+          <div class="statistic__header">
+            <!-- Diagram Description -->
+            <div class="content-couter">
+              <h6 class="content-couter__header">Кількість цивільних, котрим допомогли </h6>
+              <h3 class="content-couter__value">123,4<small>тис</small></h3>
+              <span class="content-couter__amount">123 447</span>
+            </div>
+            <!-- Diagram Description -->
+            <!-- Progress -->
+            <div class="statistic__progress statistic__progress_yellow">
+              <div class="statistic__value">
+                <p>Виконано</p>
+                <h5>30%</h5>
+              </div>
+              <div class="wave" data-wave="30"></div>
+            </div>
+            <!-- Progress -->
+          </div>
+          <!-- Diagram -->
+          <div class="diagram" data-diagram>
+            <div class="bar">
+              <div class="bar__value" data-count="100000"> 
+                <span>1000</span>
+              </div>
+              <span class="bar__label">1 травня</span>
+            </div>
+            <div class="diagram__bar bar">
+              <div class="bar__value" data-count="1800"> 
+                <span>1000</span>
+              </div>
+              <span class="bar__label">1 травня</span>
+            </div>
+            <div class="diagram__bar bar">
+              <div class="bar__value" data-count="3000"> 
+                <span>1000</span>
+              </div>
+              <span class="bar__label">1 травня</span>
+            </div>
+            <div class="diagram__bar bar">
+              <div class="bar__value" data-count="3000"> 
+                <span>1000</span>
+              </div>
+              <span class="bar__label">1 травня</span>
+            </div>
+            <div class="diagram__bar bar">
+              <div class="bar__value" data-count="3000"> 
+                <span>1000</span>
+              </div>
+              <span class="bar__label">1 травня</span>
+            </div>
+          </div>
+          <!-- Diagram -->
+        </div>
+        <div class="statistic__item">
+          <div class="statistic__header">
+            <div class="content-couter">
+              <h6 class="content-couter__header">Кількість дітей, котрим допомогли </h6>
+              <h3 class="content-couter__value">551,1<small>тис</small></h3>
+              <span class="content-couter__amount">551 107</span>
+            </div>
+            <div class="statistic__progress">
+              <div class="statistic__value">
+                <p>Виконано</p>
+                <h5>75%</h5>
+              </div>
+              <div class="wave" data-wave="75"></div>
+            </div>
+          </div>
+          <div class="diagram diagram_yellow" data-diagram>
+            <div class="bar">
+              <div class="bar__value" data-count="100000"> 
+                <span>1000</span>
+              </div>
+              <span class="bar__label">1 травня</span>
+            </div>
+            <div class="diagram__bar bar">
+              <div class="bar__value" data-count="1800"> 
+                <span>1000</span>
+              </div>
+              <span class="bar__label">1 травня</span>
+            </div>
+            <div class="diagram__bar bar">
+              <div class="bar__value" data-count="3000"> 
+                <span>1000</span>
+              </div>
+              <span class="bar__label">1 травня</span>
+            </div>
+            <div class="diagram__bar bar">
+              <div class="bar__value" data-count="3000"> 
+                <span>1000</span>
+              </div>
+              <span class="bar__label">1 травня</span>
+            </div>
+            <div class="diagram__bar bar">
+              <div class="bar__value" data-count="3000"> 
+                <span>1000</span>
+              </div>
+              <span class="bar__label">1 травня</span>
+            </div>
+          </div>
+        </div>
+        <div class="statistic__item">
+          <div class="statistic__header">
+            <div class="content-couter">
+              <h6 class="content-couter__header">Кількість військових, котрим допомогли </h6>
+              <h3 class="content-couter__value">551,1<small>тис</small></h3>
+              <span class="content-couter__amount">551 107</span>
+            </div>
+            <div class="statistic__progress statistic__progress_yellow">
+              <div class="statistic__value">
+                <p>Виконано</p>
+                <h5>45.6%</h5>
+              </div>
+              <div class="wave" data-wave="45.6"></div>
+            </div>
+          </div>
+          <div class="diagram" data-diagram>
+            <div class="bar">
+              <div class="bar__value" data-count="100000"> 
+                <span>1000</span>
+              </div>
+              <span class="bar__label">1 травня</span>
+            </div>
+            <div class="diagram__bar bar">
+              <div class="bar__value" data-count="1800"> 
+                <span>1000</span>
+              </div>
+              <span class="bar__label">1 травня</span>
+            </div>
+            <div class="diagram__bar bar">
+              <div class="bar__value" data-count="3000"> 
+                <span>1000</span>
+              </div>
+              <span class="bar__label">1 травня</span>
+            </div>
+            <div class="diagram__bar bar">
+              <div class="bar__value" data-count="3000"> 
+                <span>1000</span>
+              </div>
+              <span class="bar__label">1 травня</span>
+            </div>
+            <div class="diagram__bar bar">
+              <div class="bar__value" data-count="3000"> 
+                <span>1000</span>
+              </div>
+              <span class="bar__label">1 травня</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -75,19 +261,19 @@
       <h4>Кому та чому ми допомагаємо?</h4>
     </div>
     <div class="section__content">
-      <div>
+      <div class="content-about">
         <img src="./assets/images/img-zsu.png" alt="shop">
         <h6>ЗСУ та ТрО</h6>
         <p>Допомога підрозділам військових.
           Вони - наша надія на спільне світле майбутнє, тому наша місія-потурбуватись про кожного захисника</p>
       </div>
-      <div>
+      <div class="content-about">
         <img src="./assets/images/img-people.png" alt="shop">
         <h6>Індивідуальні запити громадян</h6>
         <p>Тисячі цивільних щодня потерпають від наслідків воєнних дій. Особливо потерпають
           і вразливі групи населення, такі як люди похилого віку. Допоможімо їм відчути себе потрібними. У наших силах надати їм речі першої необхідності, такі як ліки та їжа</p>
       </div>
-      <div>
+      <div class="content-about">
         <img src="./assets/images/img-children.png" alt="shop">
         <h6>Діткам</h6>
         <p>Беремо «під крило діток», що лишились без батьків та шукаємо нові сім‘ї. Тисячі дітей стали сиротами, втратили піклувальників, загубились під час чергових атак та відчули на собі жахіття війни. Зараз вони як ніколи потребують тепла та уваги від нас</p>
@@ -112,6 +298,7 @@
     <h6>Хочете допомогти нашій платформі?</h6>
     <button class="btn" data-open-modal="1">Звісно!</button>
   </div>
+  <!-- Footer -->
   <footer class="footer">
     <div class="footer__list">
       <a href="/about">Про нас</a>
@@ -122,7 +309,9 @@
     </div>
     <div class="copyright">© 2022 Future Ukraine</div>
   </footer>
+  <!-- Footer -->
 
+  <!-- Modal + form -->
   <div class="modal-wrapper" data-modal="1">
     <form class="modal" data-flow="4">
       <h4>Допомогти</h4>
@@ -198,9 +387,15 @@
       </button>
     </form>
   </div>
+  <!-- Modal + form -->
 
+  <!-- scripts -->
   <script src="./assets/js/modal.js"></script>
   <script src="./assets/js/modal-flow.js"></script>
   <script src="./assets/js/swiper.js"></script>
+  <script src="./assets/js/card.js"></script>
+  <script src="./assets/js/diagram.js"></script>
+  <script src="./assets/js/waves.js"></script>
+  <!-- /scripts -->
 </body>
 </html>
