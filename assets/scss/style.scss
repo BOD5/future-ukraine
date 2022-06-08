@@ -1,4 +1,3 @@
-@use '../fonts/e-Ukraine_typeface/font.css';
 @use './animations.scss';
 @use './partials/top-page.scss';
 @use './partials/footer.scss';
@@ -14,7 +13,7 @@
 @use './partials/bg.scss';
 @use './partials/btn.scss';
 @use './partials/help-page.scss';
-
+@import '../fonts/e-Ukraine_typeface/font.css';
 * {
   font-family: 'eUkraine';
   margin: 0px;
