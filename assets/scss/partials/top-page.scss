@@ -1,3 +1,4 @@
+@use '../settings.scss' as v;
 
 .top-page {
   display: flex;
@@ -29,7 +30,7 @@
       max-width: unset;
     }
 
-    // @media (max-width: $md) {
+    // @media (max-width: v.$md) {
     //   margin: 20vw auto;
     // }
   }
@@ -38,7 +39,7 @@
     text-align: center;
     text-transform: uppercase;
     padding: 14px;
-    background-color: $blue;
+    background-color: v.$blue;
 
     &-wrapper {
       align-self: stretch;
@@ -64,7 +65,7 @@
       color: white;
 
       &.active {
-        color: $yellow;
+        color: v.$yellow;
       }
     }
   }

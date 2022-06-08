@@ -1,0 +1,1 @@
+"use strict";var waves=document.querySelectorAll("[data-wave]");console.log(" - waves:2 >",waves),waves.forEach(function(e){e.style.bottom="".concat(e.dataset.wave,"%")});

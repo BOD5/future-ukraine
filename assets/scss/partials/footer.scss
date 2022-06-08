@@ -1,3 +1,5 @@
+@use '../settings.scss' as v;
+
 .footer {
   padding: 3rem 2rem 1rem;
   text-align: center;
@@ -10,7 +12,7 @@
     gap: 1rem;
     margin-bottom: 4rem;
 
-    @media (max-width: $md) {
+    @media (max-width: v.$md) {
       flex-direction: column;
     }
 
@@ -19,7 +21,7 @@
       color: white;
 
       &.active {
-        color: $yellow;
+        color: v.$yellow;
       }
     }
   }

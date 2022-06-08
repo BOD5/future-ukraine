@@ -1,3 +1,5 @@
+@use '../settings.scss' as v;
+
 .help-nav {
   display: flex;
   border: 3px solid white;
@@ -6,13 +8,13 @@
     text-decoration: none;
     color: white;
     padding: 21px 76px;
-    background-color: rgba($color: #000000, $alpha: 0.4);
+    background-color: rgba($color: #000000, v.$alpha: 0.4);
     &.active {
       background-color: white;
       color: black;
     }
   }
-  @media (max-width: $lg) {
+  @media (max-width: v.$lg) {
     display: none;
     flex-direction: column;
   }
@@ -26,12 +28,12 @@
   justify-content: space-between; 
   height: 100%;
   width: 100%;
-  @media (min-width: $md) {
+  @media (min-width: v.$md) {
     .btn {
       margin: 0px;
     }
   }
-  @media (max-width: $md) {
+  @media (max-width: v.$md) {
     padding: 4vw;
     margin-top: 4rem;
   }

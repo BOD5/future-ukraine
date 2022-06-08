@@ -1,3 +1,5 @@
+@use '../settings.scss' as v;
+
 .btn {
   padding: 33px calc(min(152px, 8vw));
   border: 5px solid white;
@@ -38,10 +40,10 @@
   position: absolute;
   top: 110px;
   left: 5vw;
-  background: rgba($color: #fff, $alpha: 0.7);
+  background: rgba($color: #fff, v.$alpha: 0.7);
   cursor: pointer;
   transition: 0.3s;
   &:hover {
-    background: rgba($color: #fff, $alpha: 1);
+    background: rgba($color: #fff, v.$alpha: 1);
   }
 }

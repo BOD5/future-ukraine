@@ -1,3 +1,5 @@
+@use '../settings.scss' as v;
+
 .content {
   width: 100%;
   padding: calc(min(10vw, 56px));
@@ -9,10 +11,10 @@
     color: white;
   }
   &_blue {
-    background: $blue;
+    background: v.$blue;
     color: white;
   }
-  @media (max-width: $md) {
+  @media (max-width: v.$md) {
     gap: 5vw;
     padding: 10vw 3vw;
     flex-direction: column;
@@ -37,7 +39,7 @@
     small {
       font-size: 24px;
     }
-    @media (max-width: $md) {
+    @media (max-width: v.$md) {
       margin: 5vw 0;
     }
   }
@@ -45,7 +47,7 @@
     font-weight: 400;
     opacity: 0.8;
   }
-  @media (max-width: $md) {
+  @media (max-width: v.$md) {
     text-align: center;
   }
   &_help {

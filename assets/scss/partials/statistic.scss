@@ -1,3 +1,5 @@
+@use '../settings.scss' as v;
+
 .statistic {
   margin-top: calc(min(118px, 7vw));
   display: flex;
@@ -22,11 +24,11 @@
     justify-content: center;
     color: black;
     position: relative;
-    background-image: linear-gradient(to top, $blue 0%, #e7f0fd 100%);
+    background-image: linear-gradient(to top, v.$blue 0%, #e7f0fd 100%);
     overflow: hidden;
 
     &_yellow {
-      background-image: linear-gradient(to top, $yellow 0%, #e8ecb0 100%);
+      background-image: linear-gradient(to top, v.$yellow 0%, #e8ecb0 100%);
     }
   }
   &__value {

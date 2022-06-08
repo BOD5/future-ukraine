@@ -1,3 +1,5 @@
+@use '../settings.scss' as v;
+
 .img-nav {
   display: flex;
   width: 90%;
@@ -10,7 +12,7 @@
     color: white;
     &:not(:last-child) {
       margin-right: 4rem;
-      @media (max-width: $md) {
+      @media (max-width: v.$md) {
         margin-right: 0px;
       }
     }
@@ -27,7 +29,7 @@
     left: 0px;
     width: 100%;
     text-align: center;
-    background: rgba($color: #000000, $alpha: .5);
+    background: rgba($color: #000000, v.$alpha: .5);
     height: 100%;
     display: flex;
     justify-content: center;
@@ -35,10 +37,10 @@
     transition: .3s;
     cursor: pointer;
     &:hover {
-      background: $blue;
+      background: v.$blue;
     }
   }
-  @media (max-width: $md) {
+  @media (max-width: v.$md) {
     // flex-direction: column;
     flex-wrap: wrap;
     gap: 15px;

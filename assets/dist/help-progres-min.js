@@ -1,0 +1,1 @@
+"use strict";var progreses=document.querySelectorAll("[data-progress]");progreses.forEach(function(e){var r=e.dataset.progress;e.style.backgroundPosition=100-r+"%";var t=e.querySelector(".progress__value");t.innerHTML=r+"%",r>50?t.style.right="calc(".concat(100-r,"% + 20px"):(t.style.color="white",t.style.left="calc(".concat(r,"% + 20px"))});

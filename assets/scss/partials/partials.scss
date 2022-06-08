@@ -1,3 +1,5 @@
+@use '../settings.scss' as v;
+
 .flow {
   margin-top: 2rem;
   display: none;
@@ -79,7 +81,7 @@ input:checked + label .checkbox-wrapper {
   background-size: 400%;
   background-position: top 200% left 220%;
   border-radius: 0 0 30px 30px;
-  padding: $big-padding;
+  padding: v.$big-padding;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -119,7 +121,7 @@ input:checked + label .checkbox-wrapper {
   margin-bottom: 32px;
   span {
     margin: 0 100px;
-    @media (max-width: $md) {
+    @media (max-width: v.$md) {
       margin: 0 20px;
     }
   }

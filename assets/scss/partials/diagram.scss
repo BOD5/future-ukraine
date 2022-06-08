@@ -1,3 +1,5 @@
+@use '../settings.scss' as v;
+
 .diagram {
   display: flex;
   max-height: 220px;
@@ -12,7 +14,7 @@
   }
   &_yellow {
     .bar__value {
-      background: linear-gradient(180deg, $yellow 6.25%, rgba(58, 118, 240, 0) 99.99%);
+      background: linear-gradient(180deg, v.$yellow 6.25%, rgba(58, 118, 240, 0) 99.99%);
     }
   }
 }
@@ -26,7 +28,7 @@
     color: black;
     position: relative;
     margin: 0px 4px;
-    background: linear-gradient(180deg, $blue 6.25%, rgba(58, 118, 240, 0) 99.99%);
+    background: linear-gradient(180deg, v.$blue 6.25%, rgba(58, 118, 240, 0) 99.99%);
     height: 100%;
     display: flex;
     justify-content: center;
@@ -51,7 +53,7 @@
   &__label {
     opacity: 0.5;
     margin-top: 17px;
-    @media (max-width: $md) {
+    @media (max-width: v.$md) {
       font-size: 12px;
     }
   }

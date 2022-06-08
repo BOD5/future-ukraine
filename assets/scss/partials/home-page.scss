@@ -1,8 +1,10 @@
+@use '../settings.scss' as v;
+
 .home {
 
   &-statistic {
     color: white;
-    padding: $big-padding;
+    padding: v.$big-padding;
     text-align: center;
 
     .content-page {
@@ -15,7 +17,7 @@
       font-size: calc(3rem + 7vw);
       margin-top: 225px;
 
-      @media (max-width: $md) {
+      @media (max-width: v.$md) {
         font-size: 4rem;
       }
     }

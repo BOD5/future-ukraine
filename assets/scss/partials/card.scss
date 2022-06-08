@@ -1,3 +1,5 @@
+@use '../settings.scss' as v;
+
 .card {
   width: 360px;
   height: 510px;
@@ -77,7 +79,7 @@
     padding: 19px;
     border: none;
     outline: none;
-    background-color: $blue;
+    background-color: v.$blue;
     color: white;
     cursor: pointer;
   

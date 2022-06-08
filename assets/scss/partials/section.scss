@@ -1,10 +1,12 @@
+@use '../settings.scss' as v;
+
 .section {
-  padding: $big-padding;
+  padding: v.$big-padding;
 
   &_reports {
     padding: 0px;
     .section__title {
-      margin: $big-padding $big-padding 0px;
+      margin: v.$big-padding v.$big-padding 0px;
     }
   }
 
@@ -44,14 +46,14 @@
   &.bg-color {
     color: white;
     text-align: center;
-    background-color: $blue;
+    background-color: v.$blue;
 
     .btn {
       margin-top: 2rem;
     }
   }
 
-  @media (max-width: $md) {
+  @media (max-width: v.$md) {
     &__title {
       display: block;
 

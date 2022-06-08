@@ -1,10 +1,12 @@
+@use '../settings.scss' as v;
+
 .report {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 15px;
-  padding: calc(min(3rem, 7vw)) $big-padding;
+  padding: calc(min(3rem, 7vw)) v.$big-padding;
   &:nth-child(2) {
     background-color: #F4F4F4;
   }
@@ -44,7 +46,7 @@
       grid-row-end: 7;
     }
   }
-  @media (max-width: $lg) {
+  @media (max-width: v.$lg) {
     flex-direction: column;
   }
 }

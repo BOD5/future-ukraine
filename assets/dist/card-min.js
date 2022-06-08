@@ -1,0 +1,1 @@
+"use strict";var cards=document.querySelectorAll(".card");cards.forEach(function(e){e.addEventListener("click",function(t){return e.classList.add("rotate")}),e.addEventListener("mouseleave",function(t){return e.classList.remove("rotate")})});
